@@ -9,4 +9,4 @@ To build and run template paste command:
 
 ```/calculate /task /contacts /home ```
 
-![how it looks](https://pasteboard.co/Mcv5w7K2Mon8.png)
+![how it looks](https://gcdnb.pbrd.co/images/Mcv5w7K2Mon8.png)
