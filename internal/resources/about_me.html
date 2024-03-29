@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+
+</style>
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center " style="padding:16px 16px">
+  <!-- <img src="https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1020%2C1020&ssl=1" alt="Avatar" style="width:500px; opacity: 1;"> -->
+  <h1 class="w3-xlarge">{{.UserInfo.Status}}</h1>
+  <h1>{{.UserInfo.Name}}</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a href="http://{{.HTTPServer.Host}}:{{.HTTPServer.Port}}/home" class="w3-bar-item w3-button">Home</a>
+      <a class="w3-bar-item w3-button w3-light-grey w3-hide-small">About me</a>
+      <a href="http://{{.HTTPServer.Host}}:{{.HTTPServer.Port}}/contacts" class="w3-bar-item w3-button">Contacts</a>
+      <a href="http://{{.HTTPServer.Host}}:{{.HTTPServer.Port}}/task" class="w3-bar-item w3-button">Task</a>
+    </div>
+  </div>
+
+  <ul class ="w3-bar w3-left-align">
+    <li><b>Education:</b> {{.UserInfo.Education}}</li>
+    <li><b>Additional info:</b> {{.UserInfo.EducationAdd}}</li>
+    <li><b>Program director:</b> {{.UserInfo.EducationDirector}}</li>
+    <li><b>Program director phone number:</b> {{.UserInfo.EducationDirectorPhone}}</li>
+    <li><b>Email:</b> {{.UserInfo.Email}}</li>
+  </ul>
+  
+</header>
+
+
+
+<!-- Photo Grid -->
+<div class="w3-row-padding w3-grayscale" style="margin-bottom:128px">
+  <div class="w3-half">
+    <img src="https://www.keithmichaels.co.uk/wp-content/uploads/2023/03/KM-From-Import-to-Insurance-740x1024.jpg" style="height: max-content; width:100%">
+    <img src="https://i1.wp.com/dragint.com/wp-content/uploads/2019/01/dragintengbuild007.jpg?ssl=1" style="height: max-content; width:100%">
+    <img src="https://i.ytimg.com/vi/Eo_9JPTfSRs/maxresdefault.jpg" style="height: max-content; width:100%">
+    <img src="https://i.pinimg.com/originals/e5/52/1e/e5521e6859bce881a0a390d3737b2a1d.jpg" style="height: max-content; width:100%">
+  </div>
+
+  <div class="w3-half">
+    <img src="https://www.mazworx.com/resize/Shared/Images/Product/RB26DETT-Long-Block-Stage-2/IMG_9155-2.jpg?bw=1000&w=1000&bh=1000&h=1000"style="height: max-content; width:100%">
+    <img src="https://dsportmag.com/wp-content/uploads/2017/05/177-Feature-R34GTR-000-Lead.jpg" style="height:max-content; width:100%">
+    <img src="https://i.pinimg.com/736x/d0/e4/50/d0e450a49b4be43529ddca88eb424212.jpg" style="height: max-content; width:100%">
+    <img src="https://a.d-cd.net/CuAAAgA-JeA-960.jpg" style="height: max-content; width:100%">
+  </div>
+</div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <a href="https://instagram.com/slugaanaroda" target="_blank">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </a>
+  <a href="https://vk.com/anothersoulformycollection" target="_blank">
+    <i class="fa fa-vk w3-hover-opacity"></i>
+  </a>
+  <a href="https://github.com/sluga1naroda" target="_blank">
+    <i class="fa fa-github w3-hover-opacity"></i>
+  </a>
+</footer>
+
+</body>
+</html>

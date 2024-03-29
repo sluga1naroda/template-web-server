@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+</head>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<header class="w3-panel w3-center " style="padding:16px 16px">
+  <h1 class="w3-xlarge">{{.UserInfo.Status}}</h1>
+  <h1>{{.UserInfo.Name}}</h1>
+  
+  <div class="w3-padding-32">
+    <div class="w3-bar w3-border">
+      <a class="w3-bar-item w3-button w3-light-grey">Home</a>
+      <a href="http://{{.HTTPServer.Host}}:{{.HTTPServer.Port}}" class="w3-bar-item w3-button">About me</a>
+      <a href="http://{{.HTTPServer.Host}}:{{.HTTPServer.Port}}/contacts" class="w3-bar-item w3-button">Contacts</a>
+      <a href="http://{{.HTTPServer.Host}}:{{.HTTPServer.Port}}/task" class="w3-bar-item w3-button w3-hide-small">Task</a>
+    </div> 
+  </div>
+</header>
+
+<!-- Photo Grid -->
+<div class="w3-row-padding w3-center" style="margin-bottom:128px">
+  <h1 class="w3-xlarge">Этот проект является учебным, не воспринимать информацию на сайте за действительность. Берегите себя и своих близких,слушайте маму и кушайте кашу</h1>
+  </div>
+</div>
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <a href="https://instagram.com/slugaanaroda" target="_blank">
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+  </a>
+  <a href="https://vk.com/anothersoulformycollection" target="_blank">
+    <i class="fa fa-vk w3-hover-opacity"></i>
+  </a>
+  <a href="https://github.com/sluga1naroda" target="_blank">
+    <i class="fa fa-github w3-hover-opacity"></i>
+  </a>
+</footer>
+
+</body>
+</html>
