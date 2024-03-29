@@ -17,6 +17,7 @@ var GlobalFlags = []cli.Flag{
 		Name:        "name",
 		Usage:       "application name",
 		EnvVars:     []string{"NAME"},
+		Value:       "some_name",
 		Destination: &Get().Application.Name,
 	},
 	&cli.StringFlag{
